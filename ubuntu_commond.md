@@ -28,6 +28,12 @@
   scp /Users/zhongyuanke/data/seurat_data/spatial/allen_cortex.rds zyk@10.69.12.23:/data
   ```
 
+* 服务器向本地传文件，在本地执行
+
+  ```
+  scp zyk@10.69.12.23:/data/file1.txt /Users/zhongyuanke/data/
+  ```
+
 * 安装r
 
   ```
@@ -52,4 +58,18 @@
   su name
   ```
 
+* 把conda添加到环境变量
+
+  ```
+  vim ~/.bashrc
+  echo 'export PATH="./anaconda3/bin:$PATH"'
+  ```
+
+  然后在里面添加一行 export echo 结果
+
+  ```
+  source ~/.bashrc
+  ```
+
   
+

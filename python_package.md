@@ -49,14 +49,14 @@ pip install .
 * 执行如下命令
 
   ```
-  python3 setup.py sdist
+python setup.py sdist bdist_wheel
   ```
 
-* 在test 同级目录下sdist下会生成一个压缩包
+* 在test 同级目录下sdist下会生成两个个压缩包
 
 * 执行如下：
 
   ```bash
-  python setup.py upload
+  twine upload dist/*上传
   ```
 
